@@ -14,7 +14,7 @@ register: ## Makes all necessary code executable so that they can be found and r
 	@(cd ${CATKIN_WS}/src/${PKG_NAME} && find . -name '*.py' -exec chmod +x {} \;)
 
 .PHONY: update-packages
-update-packages: ## adds and updates new ROS Packages
+update-packages: register ## adds and updates new ROS Packages
 	@(cd ${CATKIN_WS} && catkin_make)
 
 .PHONY: graph
