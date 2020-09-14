@@ -13,6 +13,10 @@ clean: ## Removes compiled python code to ensure it is freshly regenerated on th
 register: ## Makes all necessary code executable so that they can be found and run by the launch file
 	@(cd ${CATKIN_WS}/src/${PKG_NAME} && find . -name '*.py' -exec chmod +x {} \;)
 
+.PHONY: update-packages
+update-packages: ## adds and updates new ROS Packages
+	@(cd ${CATKIN_WS} && catkin_make)
+
 .PHONY: graph
 graph:
 	@(rqt_graph)
