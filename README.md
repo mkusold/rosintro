@@ -2,8 +2,7 @@
 
 This repo contains the following packages. Click on the links below to see specifics on each individual package.
 
-* [The Ros Web Bringup Package](rosweb_bringup/README.md) which is the entry point to run this project. See this package for more details on arguments for running options.
-* The Ros Web Messages Package which defines this project's custom message types
+* The Ros Intro Bringup Package which is the entry point to run this project.
 
 ## Goal
 
