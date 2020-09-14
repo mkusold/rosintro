@@ -16,6 +16,7 @@ register: ## Makes all necessary code executable so that they can be found and r
 .PHONY: graph
 graph:
 	@(rqt_graph)
+
 # TESTING
 .PHONY: coverage
 coverage: ## Creates coverage report for unit tests
